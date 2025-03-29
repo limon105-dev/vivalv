@@ -4,13 +4,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home</title>
+	<title>Product</title>
 	<!-- link css start -->
 	<link rel="stylesheet" href="./assets/css/contact.css">
 	<link rel="stylesheet" href="./assets/css/img-text-section.css">
-	<link rel="stylesheet" href="./assets/css/img-text-item-section.css">
 	<link rel="stylesheet" href="./assets/css/icon-item.css">
-	<link rel="stylesheet" href="./assets/css/home-banner.css">
+	<link rel="stylesheet" href="./assets/css/product-single-section.css">
 	<link rel="stylesheet" href="./assets/css/main.css">
 	<!-- link css end -->
 </head>
@@ -194,28 +193,38 @@
 	</header>
 
 	<main>
-		<!-- banner section start -->
-		<section class="banner-section home-banner">
-			<style>
-				.home-banner {
-					background-image: url("./assets/images/home-banner-img.jpg");
-				}
-			</style>
+		<!-- product-single section start -->
+		<section class="product-single-section">
 			<div class="container">
-				<div class="banner-content-inner">
-					<div class="banner-content">
-						<h1 class="banner-content-heading">Capture every moment the <em>VIVA</em>LV way</h1>
-						<p class="banner-content-text">
-							Lorem ipsum dolor sit amet consectetur adipisicing nostrum!
-						</p>
-						<div class="banner-content-btn">
-							<a class="btn secondary-btn" href="#">reserve Now<span></span></a>
+				<div class="product-single-wrapper">
+					<div class="product-single-img">
+						<img src="./assets/images/product-single-img.png" alt="product-single-img.png">
+					</div>
+					<div class="product-single-content">
+						<h2 class="product-single-title">digital photo booth</h2>
+						<p class="product-single-price">$385.00</p>
+						<div class="product-single-quantity-area">
+							<p class="product-single-quantity-title">Quantity</p>
+							<div class="product-quantity">
+								<button type="button" class="quantity-decrease"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5 1V9M1 5H9" stroke="black" stroke-width="1.73" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg></button>
+								<input type="number" value="1" class="quantity-total">
+								<button type="button" class="quantity-increase"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 4H9" stroke="black" stroke-width="1.73" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg></button>
+							</div>
+						</div>
+						<p class="product-single-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consectetur ab nihil corrupti iusto laudantium voluptate, at temporibus quis impedit!</p>
+						<div class="product-single-button-wrap">
+							<a href="#" class="btn primary-btn">Reserve Now <span></span></a>
+							<a href="#" class="btn secondary-btn">Add to Cart<span></span></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- banner section end -->
+		<!-- product-single section end -->
 
 		<!-- icon-item section start -->
 		<section class="section icon-item-section">
@@ -269,50 +278,8 @@
 		</section>
 		<!-- icon-item section end -->
 
-		<!-- img-text-item section start -->
-		<section class="section img-text-item-section">
-			<div class="container">
-				<div class="section-heading-wrapper">
-					<h2 class="section-heading">Services Offered</h2>
-				</div>
-				<div class="img-text-items">
-					<div class="img-text-item">
-						<div class="img-text-item-img">
-							<img src="../vivalv/assets/images/img-text-item-img.png" alt="img-text-item-img.png">
-						</div>
-						<div class="img-text-item-content">
-							<h3 class="img-text-item-content-title">Digital Photo Booth Rentals</h3>
-							<p class="img-text-item-content-text">Inventore iste quas facilis animi vitae officia quam culpa similique
-								et.</p>
-						</div>
-					</div>
-					<div class="img-text-item">
-						<div class="img-text-item-img">
-							<img src="../vivalv/assets/images/img-text-item-img.png" alt="img-text-item-img.png">
-						</div>
-						<div class="img-text-item-content">
-							<h3 class="img-text-item-content-title">Digital Photo Booth Rentals</h3>
-							<p class="img-text-item-content-text">Inventore iste quas facilis animi vitae officia quam culpa similique
-								et.</p>
-						</div>
-					</div>
-					<div class="img-text-item">
-						<div class="img-text-item-img">
-							<img src="../vivalv/assets/images/img-text-item-img.png" alt="img-text-item-img.png">
-						</div>
-						<div class="img-text-item-content">
-							<h3 class="img-text-item-content-title">Digital Photo Booth Rentals</h3>
-							<p class="img-text-item-content-text">Inventore iste quas facilis animi vitae officia quam culpa similique
-								et.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- img-text-item section end -->
-
 		<!-- img-text-section start -->
-		 <section class="section img-text-section">
+		<section class="section img-text-section">
 			<div class="container">
 				<div class="img-text-section-img">
 					<img src="./assets/images/img-text-section-img.png" alt="img-text-section-img.png">
@@ -320,14 +287,16 @@
 				<div class="img-text-section-content">
 					<div class="section-heading-wrapper">
 						<h2 class="section-heading">Services Offered</h2>
-						<p class="section-heading-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et hic alias ea, a eveniet aspernatur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius minus assumenda natus corrupti aspernatur qui perferendis omnis eum voluptatibus totam.</p>
+						<p class="section-heading-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et hic alias ea, a
+							eveniet aspernatur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius minus assumenda natus
+							corrupti aspernatur qui perferendis omnis eum voluptatibus totam.</p>
 						<div class="section-heading-btn">
 							<a href="#" class="btn primary-btn">Reserve Now <span></span></a>
 						</div>
 					</div>
 				</div>
 			</div>
-		 </section>
+		</section>
 		<!-- img-text-section end -->
 
 		<!-- contact section start -->
@@ -335,7 +304,8 @@
 			<div class="container">
 				<div class="section-heading-wrapper">
 					<h2 class="section-heading">Contact Us</h2>
-					<p class="section-heading-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius minus assumenda natus corrupti aspernatur qui perferendis omnis eum voluptatibus totam.</p>
+					<p class="section-heading-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius minus assumenda
+						natus corrupti aspernatur qui perferendis omnis eum voluptatibus totam.</p>
 				</div>
 				<div class="contact-form">
 					<div class="contact-field-row">
@@ -381,18 +351,18 @@
 							<li><a href="#">Cookie & Privacy Policy</a></li>
 							<li><a href="#">Returns & Complains</a></li>
 						</ul>
-				</div>
-			</div>
-		</div>
-		<div class="copyright-area">
-			<div class="container">
-				<div class="copyright-content">
-					<div class="copyright-img">
-						<img src="./assets/images/copyright-img-1.png" alt="copyright-img-1.png">
 					</div>
 				</div>
 			</div>
-		</div>
+			<div class="copyright-area">
+				<div class="container">
+					<div class="copyright-content">
+						<div class="copyright-img">
+							<img src="./assets/images/copyright-img-1.png" alt="copyright-img-1.png">
+						</div>
+					</div>
+				</div>
+			</div>
 	</footer>
 	<!-- footer section end -->
 

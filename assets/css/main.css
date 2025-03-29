@@ -138,7 +138,7 @@ img {
 input,
 textarea,
 select {
-    color: var(--text-muted);
+    color: var(--black);
     font-size: 16px;
     font-weight: 400;
     font-family: var(--paragraph-font);
@@ -155,7 +155,7 @@ select {
 input::placeholder,
 textarea::placeholder,
 select::placeholder {
-    color: var(--black);
+    color: var(--text-muted);
     font-size: 16px;
     font-weight: 500;
     font-family: var(--paragraph-font);
@@ -205,6 +205,7 @@ button {
     position: relative;
     overflow: hidden;
     background-color: var(--btn-bg);
+    border: 1px solid var(--brand-color);
 }
 
 .primary-btn span,
@@ -261,46 +262,33 @@ button {
 
 /* section heading css start */
 .section-heading-wrapper {
-    margin-bottom: 65px;
+    margin-bottom: 32px;
     text-align: center;
 }
 
 .section-heading {
     color: var(--heading-text-color);
     text-transform: capitalize;
-    font-weight: 400;
-    line-height: 70px;
-    font-size: 40px;
-}
-
-.section-heading em {
-    color: var(--brand-color);
-    font-style: normal;
-    display: block;
+    font-weight: 600;
+    line-height: 32px;
+    font-size: 32px;
 }
 
 .section-heading-text {
     color: var(--paragraph-text-color);
-    margin: 0 auto;
-    font-weight: 600;
+    margin: 10px auto 0;
+    font-weight: 400;
     font-size: 18px;
-    line-height: 34px;
+    line-height: 28px;
     text-align: center;
     max-width: 656px;
 }
 
-.section-btn {
+.section-heading-btn {
     display: flex;
     justify-content: center;
-    margin: 74px 0 0 0;
+    margin: 15px auto 0;
 }
-
-.section-btn .btn {
-    font-size: 22px;
-    font-weight: 700;
-    padding: 16px 114.5px;
-}
-
 /* section heading css end */
 
 /* navbar section css start */
@@ -540,18 +528,17 @@ button {
 
 /* footer-section css start */
 .footer-section {
-    padding: 58px 0 0 0;
-    background-color: var(--brand-color);
+    padding: 152px 0 0 0;
     position: relative;
 }
 
 .footer-wrapper {
-    padding: 0 0 33px 0;
+    padding: 64px 0;
+    border-top: 1px solid var(--border-color);
 }
 
 .footer-items {
     display: flex;
-    justify-content: space-between;
     gap: 24px;
 }
 
@@ -584,7 +571,7 @@ button {
 }
 
 .footer-title-text {
-    color: var(--white);
+    color: var(--brand-color);
     font-family: var(--heading-font);
     font-weight: 400;
     font-size: 40px;
@@ -593,12 +580,12 @@ button {
 }
 
 .footer-item-title {
-    margin: 0 0 20px 0;
-    color: var(--white);
+    margin: 0 0 24px 0;
+    color: var(--brand-color);
     font-family: var(--paragraph-font);
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 34px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 115.99999999999999%;
     text-transform: uppercase;
 }
 
@@ -606,14 +593,19 @@ button {
     display: flex;
     align-items: center;
     gap: 8px;
+    margin: 0 0 16px 0;
+}
+
+.footer-list li:last-child {
+    margin: 0;
 }
 
 .footer-list li a {
-    color: var(--white);
+    color: var(--brand-color);
     font-family: var(--paragraph-font);
     font-weight: 400;
-    font-size: 22px;
-    line-height: 38px;
+    font-size: 14px;
+    line-height: 150%;
 }
 
 .footer-list li a:hover {
@@ -641,7 +633,7 @@ a.footer-mail {
     width: 39px;
     height: 39px;
     border-radius: 50px;
-    background-color: var(--white);
+    background-color: var(--brand-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -650,7 +642,7 @@ a.footer-mail {
 
 .nav-icons.footer-icons ul li a:hover {
     background-color: transparent;
-    border-color: var(--white);
+    border-color: var(--brand-color);
 }
 
 .nav-icons.footer-icons ul li a:hover svg path {
@@ -659,8 +651,8 @@ a.footer-mail {
 }
 
 .copyright-area {
-    padding: 40px 0;
-    border-top: 2px solid var(--white);
+    padding: 64px 0;
+    border-top: 1px solid var(--border-color);
 }
 
 .copyright-content {
@@ -676,25 +668,12 @@ a.footer-mail {
 
 .copyright-text,
 .copyright-text {
-    color: var(--white);
+    color: var(--brand-color);
     font-family: var(--paragraph-font);
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
     text-align: center;
-}
-
-.back-to-top-btn {
-    position: absolute;
-    right: 22px;
-    bottom: 20px;
-    width: 27px;
-    height: 27px;
-    background-color: var(--white);
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /* footer-section css end */
@@ -744,11 +723,6 @@ a.footer-mail {
         flex-wrap: wrap;
     }
 
-    .footer-item:first-child {
-        width: 100%;
-        margin: 0 0 30px 0;
-    }
-
     .footer-item:nth-child(2) {
         width: 17%;
     }
@@ -787,6 +761,7 @@ a.footer-mail {
         transition: 300ms;
         opacity: 0;
         visibility: hidden;
+        margin: 0;
     }
 
     .nav-link-wrapper.active {
@@ -960,13 +935,17 @@ a.footer-mail {
         justify-content: center;
     }
 
-    .search-close-btn {
-        right: 35px;
-    }
-
     /* navbar css end */
 
     /* footer-section css start */
+    .footer-section {
+        padding: 64px 0 0 0;
+    }
+
+    .footer-wrapper {
+        padding: 45px 0;
+    }
+
     .footer-items {
         gap: 16px;
         flex-wrap: wrap;
@@ -1021,7 +1000,7 @@ a.footer-mail {
     /* btn css end */
 
     .section {
-        padding: 45px 0 0 0;
+        padding: 45px 0;
     }
 
     .section-heading-wrapper {
@@ -1034,8 +1013,8 @@ a.footer-mail {
     }
 
     .section-heading-text {
-        line-height: 18px;
-        margin: 10px 0 0 0;
+        line-height: 21px;
+        font-size: 16px;
     }
 
     /* common css end */

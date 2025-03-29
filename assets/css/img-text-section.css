@@ -1,0 +1,10 @@
+/* img-text-section css start */
+.img-text-section-content .section-heading-wrapper{
+    margin: 32px 0 0 0;
+}
+
+.img-text-section-content .section-heading-text{
+    width: 100%;
+    max-width: 100%;
+}
+/* img-text-section css end */
